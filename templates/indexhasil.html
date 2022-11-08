@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
     <link rel="icon" href="{{ url_for('static', filename='img/icon-Mlaku.png')}}" />
 
-    <title>{{ Kota }} Top Travel Destinations</title>
+    <title>Mlaku-Mlaku To Pasuruan</title>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -29,7 +29,6 @@
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">About Us</a>
             </li>
           </ul>
         </div>
@@ -40,46 +39,8 @@
     <!-- HOME -->
     <header class="home text-center" id="home">
       <div class="container" id="home-home">
-        <h1>Your East Java Travel Guide</h1>
+        <h1>Your Pasuruan Travel Guide</h1>
         <br></br>
-        <form action="/hasil" method="POST">
-            <input list="listkota" name="kota" value="{{ Kota }}" />
-            <datalist id="listkota">
-                <option value="Banyuwangi Regency">
-                <option value="Gresik Regency">
-                <option value="Jember Regency">
-                <option value="Jombang Regency">
-                <option value="Kediri Regency">
-                <option value="Lamongan">Lamongan Regency</option>
-                <option value="Blitar Regency">
-                <option value="Magetan Regency">
-                <option value="Malang Regency">
-                <option value="Mojokerto Regency">
-                <option value="Nganjuk Regency">
-                <option value="Ngawi Regency">
-                <option value="Pacitan Regency">
-                <option value="Pamekasan Regency">
-                <option value="Pasuruan Regency">
-                <option value="Ponorogo Regency">
-                <option value="Probolinggo Regency">
-                <option value="Sampang Regency">
-                <option value="Sidoarjo Regency">
-                <option value="Situbondo Regency">
-                <option value="Sumenep Regency">
-                <option value="Kabupaten Trenggalek"> Trenggalek Regency </option>
-                <option value="Tuban Regency">
-                <option value="Tulungagung Regency">
-                <option value="Batu">
-                <option value="Blitar">
-                <option value="Kediri">Kediri City </option>
-                <option value="Madiun City">Madiun</option>
-                <option value="Malang">Malang City </option>
-                <option value="Mojokerto"> Mojokerto City </option>
-                <option value="Pasuruan City">
-                <option value="Probolinggo">
-                <option value="Surabaya">
-            </datalist>
-        </form>
       </div>
     </header>
     <!-- END HOME -->
@@ -87,54 +48,54 @@
     <!-- RESULT -->
     <section class="content-section" id="portofolio">
         <div class="container px-4 px-lg-5">
-            <a class="btn" href="#" role="button">Top Destinations In {{ Kota }}</a>
+            <a class="btn" href="#" role="button">Top Destinations In Pasuruan</a>
             <br></br>
             <div class="row gx-0">
-              <div class="col-lg-6">
-                  <a class="portfolio-item" href="{{ DetailLokasi1.maps }}" target="_blank">
-                      <div class="caption">
-                          <div class="caption-content">
-                              <div class="h1">{{ DetailLokasi1.name }}</div>
-                              <p class="mb-0">{{ DetailLokasi1.rating }} &#11088 {{ DetailLokasi1.totalrating }} Total Rating</p>
-                          </div>
-                      </div>
-                      <img class="img-fluid" src="{{ url_for('static',filename='img/Foto_Lokasi1.jpg') }}" alt="..." /> 
-                  </a>
-              </div>
-              <div class="col-lg-6">
-                  <a class="portfolio-item" href="{{ DetailLokasi2.maps }}" target="_blank">
-                      <div class="caption">
-                          <div class="caption-content">
-                              <div class="h1">{{ DetailLokasi2.name }}</div>
-                              <p class="mb-0">{{ DetailLokasi2.rating }} &#11088 {{ DetailLokasi2.totalrating }} Total Ratings</p>
-                          </div>
-                      </div>
-                      <img class="img-fluid" src="{{ url_for('static',filename='img/Foto_Lokasi2.jpg') }}" alt="..." /> 
-                  </a>
-              </div>
-              <div class="col-lg-6">
-                  <a class="portfolio-item" href="{{ DetailLokasi3.maps }}" target="_blank">
-                      <div class="caption">
-                          <div class="caption-content">
-                              <div class="h1">{{ DetailLokasi3.name }}</div>
-                              <p class="mb-0">{{ DetailLokasi3.rating }} &#11088 {{ DetailLokasi3.totalrating }} Total Ratings</p>
-                          </div>
-                      </div>
-                      <img class="img-fluid" src="{{ url_for('static',filename='img/Foto_Lokasi3.jpg') }}" alt="..." /> 
-                  </a>
-              </div>
-              <div class="col-lg-6">
-                  <a class="portfolio-item" href="{{ DetailLokasi4.maps }}" target="_blank">
-                      <div class="caption">
-                          <div class="caption-content">
-                              <div class="h1">{{ DetailLokasi4.name }}</div>
-                              <p class="mb-0">{{ DetailLokasi4.rating }} &#11088 {{ DetailLokasi4.totalrating }} Total Ratings</p>
-                          </div>
-                      </div>
-                      <img class="img-fluid" src="{{ url_for('static',filename='img/Foto_Lokasi4.jpg') }}" alt="..." /> 
-                  </a>
-              </div>
-          </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="{{ DetailLokasi1.maps }}" target="_blank">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">{{ DetailLokasi1.name }}</div>
+                                <p class="mb-0">{{ DetailLokasi1.rating }} &#11088 {{ DetailLokasi1.totalrating }} Total Ratings</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static',filename='img/Foto_Lokasi1.jpg') }}" alt="..." /> 
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="{{ DetailLokasi2.maps }}" target="_blank">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">{{ DetailLokasi2.name }}</div>
+                                <p class="mb-0">{{ DetailLokasi2.rating }} &#11088 {{ DetailLokasi2.totalrating }} Total Ratings</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static',filename='img/Foto_Lokasi2.jpg') }}" alt="..." /> 
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="{{ DetailLokasi3.maps }}" target="_blank">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">{{ DetailLokasi3.name }}</div>
+                                <p class="mb-0">{{ DetailLokasi3.rating }} &#11088 {{ DetailLokasi3.totalrating }} Total Ratings</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static',filename='img/Foto_Lokasi3.jpg') }}" alt="..." /> 
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="{{ DetailLokasi4.maps }}" target="_blank">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">{{ DetailLokasi4.name }}</div>
+                                <p class="mb-0">{{ DetailLokasi4.rating }} &#11088 {{ DetailLokasi4.totalrating }} Total Ratings</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static',filename='img/Foto_Lokasi4.jpg') }}" alt="..." /> 
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
     <!-- END RESULT -->
@@ -146,7 +107,7 @@
           <p><br></br>Ayo mlaku-mlaku!</p>
         </div>
         <div class="row">
-          <p>&copy;2021 Project UAS Algoritma Pemrograman II Kelompok 10</p>
+          <p>&copy;2022 Teknologi Sains Data Unair</p>
         </div>
       </div>
     </section>

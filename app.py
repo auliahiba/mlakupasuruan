@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/',methods=['POST','GET'])
 def home():
     Kota = "Pasuruan"
-    url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Tourist+Destination+In+"+Kota+"&type=tourist_attraction&language=en&key=AIzaSyB7GY6bUsVwu10TITf-n65-dKJ91IUhHfw"
+    url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Tourist+Destination+In+"+Kota+"+&type=tourist_attraction&language=en&key=AIzaSyCpY_3-iwR2xIpvpf6EOv_oWjjy6YdsFEI"
 
     payload={}
     headers = {}
@@ -24,10 +24,10 @@ def home():
     photoref3 = poi[3]["photos"][0]["photo_reference"]
     photoref4 = poi[4]["photos"][0]["photo_reference"]
 
-    urlphoto1 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref1+"&key=AIzaSyB7GY6bUsVwu10TITf-n65-dKJ91IUhHfw"
-    urlphoto2 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref2+"&key=AIzaSyB7GY6bUsVwu10TITf-n65-dKJ91IUhHfw"
-    urlphoto3 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref3+"&key=AIzaSyB7GY6bUsVwu10TITf-n65-dKJ91IUhHfw"
-    urlphoto4 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref4+"&key=AIzaSyB7GY6bUsVwu10TITf-n65-dKJ91IUhHfw"
+    urlphoto1 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref1+"&key=AIzaSyCpY_3-iwR2xIpvpf6EOv_oWjjy6YdsFEI"
+    urlphoto2 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref2+"&key=AIzaSyCpY_3-iwR2xIpvpf6EOv_oWjjy6YdsFEI"
+    urlphoto3 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref3+"&key=AIzaSyCpY_3-iwR2xIpvpf6EOv_oWjjy6YdsFEI"
+    urlphoto4 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref4+"&key=AIzaSyCpY_3-iwR2xIpvpf6EOv_oWjjy6YdsFEI"
 
     responsephoto1 = requests.get(urlphoto1)
     responsephoto2 = requests.get(urlphoto2)
@@ -107,7 +107,7 @@ def abouts():
 @app.route('/hasil', methods=['POST','GET'])
 def get_poi():
     Kota = request.form['kota']
-    url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Tourists+Destinations+In+"+Kota+"&type=tourist_attraction&language=en&key=AIzaSyB7GY6bUsVwu10TITf-n65-dKJ91IUhHfw"
+    url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Tourists+Destinations+In+"+Kota+"&type=tourist_attraction&language=en&key=AIzaSyCpY_3-iwR2xIpvpf6EOv_oWjjy6YdsFEI"
 
     payload={}
     headers = {}
@@ -123,10 +123,10 @@ def get_poi():
     photoref3 = poi[2]["photos"][0]["photo_reference"]
     photoref4 = poi[3]["photos"][0]["photo_reference"]
 
-    urlphoto1 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref1+"&key=AIzaSyB7GY6bUsVwu10TITf-n65-dKJ91IUhHfw"
-    urlphoto2 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref2+"&key=AIzaSyB7GY6bUsVwu10TITf-n65-dKJ91IUhHfw"
-    urlphoto3 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref3+"&key=AIzaSyB7GY6bUsVwu10TITf-n65-dKJ91IUhHfw"
-    urlphoto4 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref4+"&key=AIzaSyB7GY6bUsVwu10TITf-n65-dKJ91IUhHfw"
+    urlphoto1 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref1+"&key=AIzaSyCpY_3-iwR2xIpvpf6EOv_oWjjy6YdsFEI"
+    urlphoto2 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref2+"&key=AIzaSyCpY_3-iwR2xIpvpf6EOv_oWjjy6YdsFEI"
+    urlphoto3 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref3+"&key=AIzaSyCpY_3-iwR2xIpvpf6EOv_oWjjy6YdsFEI"
+    urlphoto4 = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&maxheight=900&photo_reference="+photoref4+"&key=AIzaSyCpY_3-iwR2xIpvpf6EOv_oWjjy6YdsFEI"
 
     responsephoto1 = requests.get(urlphoto1)
     responsephoto2 = requests.get(urlphoto2)
