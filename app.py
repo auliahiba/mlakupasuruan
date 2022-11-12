@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/',methods=['POST','GET'])
 def home():
     Kota = "Pasuruan"
-    url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Tourist+Destination+In+"+Kota+"+&type=tourist_attraction&language=en&key=AIzaSyCpY_3-iwR2xIpvpf6EOv_oWjjy6YdsFEI"
+    url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Destinasi+wisata+"+Kota+"+&type=tourist_attraction&language=en&key=AIzaSyCpY_3-iwR2xIpvpf6EOv_oWjjy6YdsFEI"
 
     payload={}
     headers = {}
@@ -107,7 +107,7 @@ def abouts():
 @app.route('/hasil', methods=['POST','GET'])
 def get_poi():
     Kota = request.form['kota']
-    url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Tourists+Destinations+In+"+Kota+"&type=tourist_attraction&language=en&key=AIzaSyCpY_3-iwR2xIpvpf6EOv_oWjjy6YdsFEI"
+    url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Destinasi+wisata+"+Kota+"&type=tourist_attraction&language=en&key=AIzaSyCpY_3-iwR2xIpvpf6EOv_oWjjy6YdsFEI"
 
     payload={}
     headers = {}
